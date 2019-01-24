@@ -1,0 +1,69 @@
+# 项目相关配置
+Bridge:
+  # 名称
+  name: Bridge
+  # 版本
+  version: 1.0.0
+  # 版权年份
+  copyrightYear: 2019
+
+# 开发环境配置
+server:
+  # 服务端口
+  port: 80
+  servlet:
+    # 项目contextPath
+    context-path: /
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # tomcat最大线程数，默认为200
+    max-threads: 800
+    # Tomcat启动初始化的线程数，默认值25
+    min-spare-threads: 30
+ 
+# 日志配置
+logging:
+  level:
+    com.bridge: debug
+    org.springframework: WARN
+    org.spring.springboot.dao: debug
+
+
+# Spring配置
+spring:
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  profiles: 
+    active: druid
+  # 服务模块
+  devtools:
+    restart:
+      # 热部署开关
+      enabled: true
+
+# MyBatis
+mybatis:
+    # 搜索指定包别名
+    typeAliasesPackage: com.bridge
+    # 配置mapper的扫描，找到所有的mapper.xml映射文件
+    mapperLocations: classpath*:mapper/**/*Mapper.xml
+    # 加载全局的配置文件
+    configLocation: classpath:mapper/mybatis-config.xml
+
+# PageHelper分页插件
+pagehelper: 
+  helperDialect:
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+#服务设置
+E9:
+  #服务 ip
+  IP: 192.168.88.19
+  #服务 端口号
+  PORT : 8080
+  #超时时间
+  TimeOut : 20000
