@@ -26,6 +26,7 @@
 		<oshi.version>3.9.1</oshi.version>
 		<sqlserver.version>4.0</sqlserver.version>
 		<httpclient.version>4.5</httpclient.version>
+        <springweb.version>1.4.1.RELEASE</springweb.version>
 	</properties>
 	
     <dependencyManagement>

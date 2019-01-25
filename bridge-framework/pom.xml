@@ -17,18 +17,25 @@
     
     <dependencies>
 
+		<!-- 内置容器标记成provided -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
         <!-- SpringBoot Web容器 -->
 	     <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-			 <version>1.4.1.RELEASE</version>
+			 <version>${springweb.version}</version>
         </dependency>
 
         <!-- SpringBoot 拦截器 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
-			<version>1.4.1.RELEASE</version>
+			<version>${springweb.version}</version>
 		</dependency>
 
 		<!--阿里数据库连接池 -->
