@@ -45,13 +45,6 @@
             <version>${druid.version}</version>
         </dependency>
 
-		<!-- 解析客户端操作系统、浏览器等 -->
-		<dependency>
-			<groupId>eu.bitwalker</groupId>
-			<artifactId>UserAgentUtils</artifactId>
-			<version>${bitwalker.version}</version>
-		</dependency>
-
         <!-- 系统模块-->
         <dependency>
             <groupId>com.bridge</groupId>
@@ -78,16 +71,6 @@
 			<groupId>com.github.oshi</groupId>
 			<artifactId>oshi-core</artifactId>
 			<version>${oshi.version}</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>net.java.dev.jna</groupId>
-			<artifactId>jna</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>net.java.dev.jna</groupId>
-			<artifactId>jna-platform</artifactId>
 		</dependency>
 
     </dependencies>

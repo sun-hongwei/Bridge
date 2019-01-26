@@ -55,7 +55,15 @@
 		    <groupId>org.yaml</groupId>
 		    <artifactId>snakeyaml</artifactId>
 		</dependency>
-		
-    </dependencies>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna-platform</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>net.java.dev.jna</groupId>
+			<artifactId>jna-platform</artifactId>
+		</dependency>
+
+	</dependencies>
   
 </project>
