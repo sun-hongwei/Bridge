@@ -45,7 +45,7 @@ public class SwaggerConfig
     {
         // 用ApiInfoBuilder进行定制
         return new ApiInfoBuilder()
-                .title("长春易加科技E9-APP 接口文档")
+                .title("长春易加科技E9对接平台接口文档")
                 .description("用于移动端接口描述，方便开发及实施人员接口开发及速查")
                 .contact(new Contact(Global.getName(), null, null))
                 .version("版本号:" + Global.getVersion())
