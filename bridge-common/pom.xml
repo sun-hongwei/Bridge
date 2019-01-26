@@ -43,25 +43,10 @@
 			<version>${commons.io.version}</version>
 		</dependency>
 		
-		<!-- HTML解析器 -->
-		<dependency>
-			<groupId>org.jsoup</groupId>
-			<artifactId>jsoup</artifactId>
-			<version>${jsoup.version}</version>
-		</dependency>
-		
 		<!-- yml解析器 -->
 		<dependency>
 		    <groupId>org.yaml</groupId>
 		    <artifactId>snakeyaml</artifactId>
-		</dependency>
-        <dependency>
-            <groupId>net.java.dev.jna</groupId>
-            <artifactId>jna-platform</artifactId>
-        </dependency>
-		<dependency>
-			<groupId>net.java.dev.jna</groupId>
-			<artifactId>jna-platform</artifactId>
 		</dependency>
 
 	</dependencies>
