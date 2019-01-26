@@ -92,7 +92,6 @@ public class SwaggerController {
     }
 
     /**
-     *
      * @param facilityCode 设备编号
      * @return
      */
@@ -105,14 +104,17 @@ public class SwaggerController {
 
         try {
 
-            String httpPost = HttpClientUtil.sendHttpPost(BaseAPI.getManuFroms+"?facilityCode="+facilityCode);
+            String httpPost = HttpClientUtil.sendHttpPost(BaseAPI.getManuFroms + "?facilityCode=" + facilityCode);
 
-            System.out.println(httpPost);
-
-            ManuFroms froms = JSON.unmarshal(httpPost, ManuFroms.class);
-
-            System.out.println(froms.getManuFrom().size());
+            if (StringUtils.isNotEmpty(httpPost)) {
+                //Json转对象
+                ManuFroms froms = JSON.unmarshal(httpPost, ManuFroms.class);
+                manuFromsBusiness.setData(froms);
+            }
         } catch (Exception e) {
+            manuFromsBusiness.setCode(500);
+            manuFromsBusiness.setMessage("获取制造通知单失败");
+            log.error(e.getMessage());
             e.printStackTrace();
         }
 

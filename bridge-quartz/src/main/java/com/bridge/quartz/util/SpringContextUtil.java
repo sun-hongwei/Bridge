@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 /**
  * spring管理环境中获取bean
  * 
- * @author yangzz
+ * @author bridge
  */
 @Service("springContextUtil")
 public class SpringContextUtil implements ApplicationContextAware

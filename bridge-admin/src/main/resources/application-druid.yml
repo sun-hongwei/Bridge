@@ -12,7 +12,7 @@ spring:
                 password: 1qaz1QAZ
             # E9数据源
             slave:
-                # E9数据源开关/默认关闭
+                # E9数据源开关：true 开启，false 关闭
                 enabled: true
                 url: jdbc:sqlserver://192.168.88.19:1433;DatabaseName=bridgeslave
                 username: sa
