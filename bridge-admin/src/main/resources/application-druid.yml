@@ -2,10 +2,9 @@
 spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
-        # mysql:com.mysql.cj.jdbc.Driver
         driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
         druid:
-            # Bridge数据源 ?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+            # Bridge数据源
             master:
                 url: jdbc:sqlserver://192.168.88.19:1433;DatabaseName=bridge
                 username: sa
@@ -13,7 +12,7 @@ spring:
             # E9数据源
             slave:
                 # E9数据源开关：true 开启，false 关闭
-                enabled: true
+                enabled: false
                 url: jdbc:sqlserver://192.168.88.19:1433;DatabaseName=bridgeslave
                 username: sa
                 password: 1qaz1QAZ
